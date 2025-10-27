@@ -22,7 +22,7 @@ This end-to-end PowerShell sample demonstrates distributed tracing with OpenTele
 2. **Run build.ps1:**
 
     ```powershell
-    cd /src
+    cd src
     ./build.ps1
         ```
 
