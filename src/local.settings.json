@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME_VERSION": "7.4",
+    "FUNCTIONS_WORKER_RUNTIME": "powershell",
+    "OTEL_FUNCTIONS_WORKER_ENABLED": "true",
+    "ExternalDurablePowerShellSDK": "true",
+    "OTEL_EXPORTER_OTLP_ENDPOINT": "<your-otlp-endpoint>",
+    "OTEL_EXPORTER_OTLP_HEADERS": "<your-otlp-headers>"
+  }
+}
