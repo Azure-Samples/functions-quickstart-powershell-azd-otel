@@ -78,5 +78,5 @@ azd env set --secret OTEL_EXPORTER_OTLP_HEADERS "<your-headers>"
 ## Additional Notes
 
 - This sample demonstrates tracing across an HTTP starter, an orchestrator and multiple activities. With DTS, there are no Azure Storage queue/table operations to filter out.
-- This sample uses the standalone PowerShell SDK `AzureFunctions.PowerShell.Durable.SDK` and the preview extension bundle (`Microsoft.Azure.Functions.ExtensionBundle.Preview`, `[4.*, 5.0.0)`) required for the `azureManaged` storage provider.
+- This sample uses the standalone PowerShell SDK `AzureFunctions.PowerShell.Durable.SDK` and the standard extension bundle (`Microsoft.Azure.Functions.ExtensionBundle`, `[4.*, 5.0.0)`), which provides the `azureManaged` storage provider for the Durable Task Scheduler backend.
 - PowerShell does not currently export OpenTelemetry + distributed tracing to Application Insights, so an OTLP collector is still required for distributed traces.
