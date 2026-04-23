@@ -37,7 +37,6 @@ param dtsName string = ''
 param taskHubName string = ''
 param dtsLocation string = location
 param dtsSkuName string = 'Consumption'
-param dtsCapacity int = 1
 
 @description('OTLP endpoint used by the PowerShell worker for OpenTelemetry export.')
 param otelExporterOtlpEndpoint string = ''
@@ -195,7 +194,6 @@ module dts './app/dts.bicep' = {
       '0.0.0.0/0'
     ]
     skuName: dtsSkuName
-    skuCapacity: dtsCapacity
   }
 }
 

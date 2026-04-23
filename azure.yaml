@@ -6,5 +6,10 @@ metadata:
 services:
   api:
     project: ./src
+    # NOTE: language is intentionally set to 'js' (not 'powershell') as a workaround.
+    # azd's PowerShell language packager does not yet handle the Flex Consumption
+    # ZIP layout this template produces; 'js' uses the generic ZIP packager which
+    # works for any runtime, while the Function App's actual runtime is selected
+    # by the FUNCTIONS_WORKER_RUNTIME app setting in main.bicep (powershell).
     language: js
     host: function
