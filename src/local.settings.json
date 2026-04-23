@@ -7,6 +7,8 @@
     "OTEL_FUNCTIONS_WORKER_ENABLED": "true",
     "ExternalDurablePowerShellSDK": "true",
     "OTEL_EXPORTER_OTLP_ENDPOINT": "<your-otlp-endpoint>",
-    "OTEL_EXPORTER_OTLP_HEADERS": "<your-otlp-headers>"
+    "OTEL_EXPORTER_OTLP_HEADERS": "<your-otlp-headers>",
+    "DURABLE_TASK_SCHEDULER_CONNECTION_STRING": "Endpoint=http://localhost:8080;Authentication=None",
+    "TASKHUB_NAME": "default"
   }
 }
