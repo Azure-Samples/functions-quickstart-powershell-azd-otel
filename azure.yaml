@@ -6,5 +6,5 @@ metadata:
 services:
   api:
     project: ./src
-    language: powershell
+    language: js
     host: function

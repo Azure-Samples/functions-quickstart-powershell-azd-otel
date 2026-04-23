@@ -11,3 +11,6 @@ __azurite_db*__.json
 
 # Modules folder
 Modules
+# Stubs for azd packaging (generated locally)
+package-lock.json
+requirements.psd1
