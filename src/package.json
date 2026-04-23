@@ -1,0 +1,5 @@
+{
+  "name": "functions-quickstart-powershell-azd-otel",
+  "version": "1.0.0",
+  "description": "Durable Functions PowerShell OpenTelemetry quickstart - no JS dependencies needed (azd packaging stub)"
+}
