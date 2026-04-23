@@ -115,7 +115,6 @@ module api './app/api.bicep' = {
 }
 
 // Backing storage for Azure Functions (deployment package + AzureWebJobsStorage blob).
-// With Durable Task Scheduler, queue and table storage are no longer needed for Durable Functions.
 module storage 'br/public:avm/res/storage/storage-account:0.8.3' = {
   name: 'storage'
   scope: rg
@@ -140,8 +139,8 @@ module storage 'br/public:avm/res/storage/storage-account:0.8.3' = {
 
 var storageEndpointConfig = {
   enableBlob: true
-  enableQueue: false
-  enableTable: false
+  enableQueue: true   // Required for AzureWebJobsStorage host operations and non-Durable triggers/bindings
+  enableTable: true   // Required for AzureWebJobsStorage host operations and non-Durable triggers/bindings
   enableFiles: false
   allowUserIdentityPrincipal: true
 }
